@@ -1,0 +1,52 @@
+/* Global Styles */
+* { 
+    box-sizing: border-box;
+  }
+
+/* Base Styles */
+body {
+    font-family: 'Merriweather', serif;
+    background: white;
+    margin: 0;
+  }
+
+.item {
+    width: auto;
+    text-align: center;
+}
+
+h2 {
+    background: rgb(39, 45, 54);
+    color: white;
+    padding: 25px;
+    margin: 0;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.intro {
+    color: lightgray;
+    padding: 0px 15px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgb(39, 45, 54);
+}
+
+.fieldset {
+    border: none;
+}
+
+.flex-outer li,
+.flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Styles For Larger Screens */
+@media (min-width: 768px) {
+}
