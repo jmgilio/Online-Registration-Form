@@ -19,16 +19,16 @@
             <form action="index.html" method="post">
                 
                 <fieldset class="fieldset">
+                    <legend class="contact">Contact Information</legend>
                     <ul class="flex-outer">
-                        <legend>Contact Information</legend>
                             <li>
                                 <label for="name">Full Name</label>
-                                <input type="text" id="name" name="user_name" placeholder="Required">
+                                <input type="text" id="name" name="user_name" placeholder="Required" required>
                             </li>
 
                             <li>
                                 <label for="mail">Email Address</label>
-                                <input type="email" id="mail" name="user_email" placeholder="Required">
+                                <input type="email" id="mail" name="user_email" placeholder="Required" required>
                             </li>
 
                             <li>
@@ -49,6 +49,7 @@
                             <li>
                                 <label for="state">State</label>
                                 <select id="state" name="user_state">
+                                    <option value="" disabled selected>Choose State</option>
                                     <option value="alabama">Alabama</option>
                                     <option value="alaska">Alaska</option>
                                     <option value="arizona">Arizona</option>

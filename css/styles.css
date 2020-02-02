@@ -31,9 +31,42 @@ h3 {
     padding: 0px 15px;
 }
 
+.contact {
+    font-size: large;
+    font-weight: bolder;
+}
+
 input:focus,
 textarea:focus {
     border-color: rgb(39, 45, 54);
+}
+
+label {
+    padding: 8px 8px 8px 0px;
+    margin-top: 10px;
+    color: lightgray;
+    font-size: small;
+}
+
+input,
+select {
+    border-radius: 10%;
+    background: rgb(230, 233, 236);
+    padding: 5px;
+    width: 100%;
+    border: none;
+    height: 50px;
+}
+
+::placeholder {
+    text-align: right;
+    font-size: x-small;
+    font-style: italic;
+    padding-right: 15px;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
 
 .fieldset {
