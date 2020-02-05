@@ -3,6 +3,11 @@
     box-sizing: border-box;
   }
 
+  ::placeholder {
+    color: lightgray;
+    opacity: 1;
+  }
+
 /* Base Styles */
 body {
     font-family: 'Merriweather', serif;
@@ -31,14 +36,32 @@ h3 {
     padding: 0px 15px;
 }
 
+#hr {
+    border: 2px solid rgb(39, 45, 54);
+    margin: 40px 15px 0 15px;
+}
+
+#hr2 {
+    border: .5px solid rgb(39, 45, 54);
+    margin: 3px 15px 25px 15px;
+}
+
+#hr3 {
+    border: .5px solid rgb(39, 45, 54);
+    margin: 15px 15px 15px 15px;
+}
+
 .contact {
     font-size: large;
     font-weight: bolder;
 }
 
 input:focus,
-textarea:focus {
-    border-color: rgb(39, 45, 54);
+textarea:focus,
+select {
+    border: 1.5px solid rgb(39, 45, 54);
+    outline: none;
+    
 }
 
 label {
@@ -50,12 +73,46 @@ label {
 
 input,
 select {
-    border-radius: 10%;
+    border-radius: 5px;
     background: rgb(230, 233, 236);
     padding: 5px;
     width: 100%;
     border: none;
     height: 50px;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    width: auto;
+    height: auto;
+}
+
+.newsletter {
+    font-size: large;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+textarea {
+    border-radius: 5px;
+    background: rgb(230, 233, 236);
+    padding: 5px;
+    width: 100%;
+    border: none;
+    height: 100px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    padding: 15px 0px;
+    background-color: rgb(16, 194, 185);
+    color: white;
+    font-weight: bolder;
 }
 
 ::placeholder {
@@ -71,6 +128,15 @@ input:focus::placeholder {
 
 .fieldset {
     border: none;
+}
+
+footer {
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 220px;
+    color: lightgray;
 }
 
 .flex-outer li,

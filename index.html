@@ -17,7 +17,7 @@
         </header>
         <main>
             <form action="index.html" method="post">
-                
+                <hr id="hr"><hr id="hr2">
                 <fieldset class="fieldset">
                     <legend class="contact">Contact Information</legend>
                     <ul class="flex-outer">
@@ -49,7 +49,7 @@
                             <li>
                                 <label for="state">State</label>
                                 <select id="state" name="user_state">
-                                    <option value="" disabled selected>Choose State</option>
+                                    <option value="" disabled selected id="disabled">Choose State</option>
                                     <option value="alabama">Alabama</option>
                                     <option value="alaska">Alaska</option>
                                     <option value="arizona">Arizona</option>
@@ -109,9 +109,10 @@
                             </li>
                         </ul>
                     </fieldset>
+                    <hr id="hr3">
 
                         <fieldset class="fieldset">
-                            <legend>Newsletter</legend>
+                            <legend class="newsletter">Newsletter</legend>
                                 <ul class="flex-inner">
                                     <li>
                                         <label>Select the newsletters you would like to recieve</label><br>
@@ -133,10 +134,9 @@
                                     <textarea id="comments" name="user_comments"></textarea>
                                 </li>
                         </fieldset>
-                            <li>
-                                <button type="submit">Sign Up</button>
-                            </li>
                         </ul>
+
+                        <button type="submit">Sign Up</button>
             </form>
         </main>
         <footer>
